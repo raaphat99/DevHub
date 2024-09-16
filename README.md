@@ -4,9 +4,9 @@ DevHub is an online platform that allows you to discover and connect with softwa
 # Installation
 1. clone repo [https://github.com/raaphat99/DevHub.git]
 2. create a virtual environment and activate
-pip install virtualenv
-virtualenv envname
-envname\scripts\activate
+  * pip install virtualenv
+  * virtualenv envname
+  * envname\scripts\activate
 4. cd into project "cd devsearch"
 5. pip install -r requirements.txt
 6. python manage.py runserver
