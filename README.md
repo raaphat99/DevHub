@@ -11,18 +11,19 @@ envname\scripts\activate
 5. pip install -r requirements.txt
 6. python manage.py runserver
 # Features
-* Share Projects
+* Browse and search for developers
+* Browse and search for projects
+* Edit / Delete account information
+* Create / Edit / Delete your projects
+* Reset password to your account via email
+* Send messages to developers / Read your inbox messages
 * Message other developers
-* Rate others work
-* Search other developers
-* Database Design and Models
+* Rate and give a review for others work
 * User Registration & Authenticaiton
-* Search
 * Pagination
 * Building an API with Django REST Framework (DRF)
 * Deployment using S3 Bucket & RDS in AWS
-# Programming Languages & Frameworks
-* Used 
+# Programming Languages & Frameworks Used 
 * Django
 * Postgres
 * Django REST Framework
