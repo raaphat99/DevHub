@@ -1,0 +1,50 @@
+{% extends 'main.html' %} {% block content %}
+
+<!-- Main Section -->
+<main class="formPage my-xl">
+  <div class="content-box">
+    <div class="formWrapper">
+      <a class="backButton" href="{% url 'account' %}"><i class="im im-angle-left"></i></a>
+      <br />
+      <!-- When we make a POST request, we have to encode the data that forms the body of the request in some way.
+            HTML forms provide three methods of encoding. "multipart/form-data" is one of them. -->
+      <form class="form" method="POST" enctype="multipart/form-data">
+
+        <!-- This token just makes sure that our data was manipulated, safe, and clean  -->
+        {% csrf_token %} 
+        
+        {% for field in form %}
+        <!-- Input:Text -->
+        <div class="form__field">
+          <label for="formInput#text">{{field.label}}</label>
+          {{field}}
+        </div>
+        {% endfor %}
+
+        <div class="form__field" >
+          {% for tag in project.tags.all %}
+            <!-- data-tag and data-project are custom attributes. 
+                '&#215;' This token is for showing the 'X' symbol.
+                Now, when we click on it, we want to extract the 'project.id' and the 'tag.id' and send a DELETE request to the backend
+              -->
+            <div class="project-tag tag tag--pill tag--main" data-tag="{{tag.id}}" data-project="{{project.id}}" >{{tag.name}} &#215;</div>
+          {% endfor %}
+        </div>
+
+        <!-- our custom form -->
+        <div class="form__field" >
+          <label for="formInput#text">Tags</label> 
+          <textarea name="newtags" class="input" placeholder="Add tags here..."></textarea>
+        </div>
+
+        <input
+          class="btn btn--sub btn--lg my-md"
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
