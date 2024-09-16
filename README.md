@@ -25,7 +25,7 @@ envname\scripts\activate
 * Deployment using S3 Bucket & RDS in AWS
 # Programming Languages & Frameworks Used 
 * Django
-* Postgres
+* PostgreSQL
 * Django REST Framework
 * HTML
 * CSS
