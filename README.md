@@ -29,7 +29,11 @@ envname\scripts\activate
 * HTML
 * CSS
 * JavaScript
+# Home
 ![Home](https://github.com/user-attachments/assets/483717eb-f1b5-4354-84fa-70cfd4255e2f)
+# Dev Projects
 ![Developer Projects](https://github.com/user-attachments/assets/c7e99fc5-eb9d-4b8b-8253-94b4a96ae692)
+# Dev Profile
 ![Developer Profile](https://github.com/user-attachments/assets/0cab0d54-7b11-4474-87d6-5bf8061f2634)
+# Dev Inbox
 ![Developer Inbox](https://github.com/user-attachments/assets/13b14e16-5ae2-4a62-bcc4-413eced7c624)
